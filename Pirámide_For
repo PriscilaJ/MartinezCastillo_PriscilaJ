@@ -1,0 +1,4 @@
+nFilas =int(input('Ingresa el número de filas: '))
+for i in range(nFilas+1):
+    espacios=nFilas-i
+    print(' '*espacios+'* '*i)
