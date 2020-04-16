@@ -1,0 +1,24 @@
+''' DESCRIPCIÓN:Escribe un programa que calcule de la forma A+B, números dados en la entrada.
+    ESPECIFICACIÓN DE ENTRADA: La única línea de entrada contiene dos enteros separados por espacio: A,B(0<=A,B<=10)
+    ESPECIFICACIÓN DE SALIDA: La única línea de salida puede contener un solo número entero: la suma de A y B. 
+    EJEMPLO DE ENTRADA: 1 2
+    EJEMPLO DE SALIDA: 3
+'''
+numeros=input("Digite 2 números separados por un espacio: ") #Pedimos una sola entrada al usuario donde digitará ambos números.
+
+'''
+Con la siguiente línea estoy creando una lista de nombre 'num' ---> num=list
+pero la sentencia 'map' es necesaria porque tomaremos dos argumentos que son int (para convertir los 
+números a enteros del split que estoy aplicando.) Básicamente el split se encarga de tomar los valores de una línea pero
+ignora los espacios. De esta forma los convierte a entero ya que leímos un String (numeros) y eso lo guarda en una lista.
+'''
+num=list(map(int,numeros.split()))
+
+'''Procedemos al condicional que nos ayudará a cumplir la restricción mencionada en la especificación de entrada.
+   La condicional se lee: SI el elemento de mi lista en la posición 0 es >=0 Y SI el número de mi lista
+   en la posición 1 es <=10 ENTONCES si y solo si ambas condiciones son verdaderas se podra ejecutar la suma. 
+   De lo contrario, informamos al usuario con un mensaje de que no ha introducido bien los valores. '''
+if num[0]>=0 and num[1]<=10: 
+     print(num[0]+num[1])
+else:
+     print ("El primer número debe ser mayor igual a 0 y el segundo número debe ser menor igual a 10. Intente de nuevo.") 
