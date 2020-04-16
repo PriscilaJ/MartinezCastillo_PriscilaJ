@@ -1,0 +1,11 @@
+''' DESCRIPCIÓN: Escribe un programa que encuentre la suma de todos los números enteros comprendidos entre 1 y N (incluyéndolos.)
+    ESPECIFICACIÓN DE ENTRADA: Consiste en una sola línea con un entero N que no es mayor que 10^4 por su valor absoluto.
+    ESPECIFICACIÓN DE SALIDA: Escribir en la salida un número entero que es la suma de todos los números enteros comprendidos entre 1 y N (incluyéndolos.)
+    EJEMPLO DE ENTRADA: 3
+    EJEMPLO DE SALIDA: 6
+'''
+n=int(input('Ingresa un entero que no sea mayor que 10^4 por su valor absoluto:  ')) #Pedimos un numero entero
+if abs(n)<=10**4: #Python nos da un método llamado 'abs' que nos sirve para regresar el valor absoluto (positivo) de mi numero entero 
+    print((n/2)*(n+1)) #Al hacer esta operación obtenemos la suma de todos los números enteros comprendidos entre 1 y N
+else:
+     print ("Intente de nuevo.") 
