@@ -15,3 +15,13 @@ Metodología de la solución:
      map():Toma dos argumentos. El primer argumento es el método a aplicar y el segundo es el dato en donde se aplicará, es decir
            hacemos un casting a cada elemento de numeros.split()
      split():Divide los elementos de una variable al encontrar un espacio y los guarda en una lista.
+
+
+PROBLEMA #2:
+Descripción: Escribe un programa que encuentre la suma de todos los números enteros comprendidos entre 1 y N (incluyéndolos.)
+             Consiste en una sola línea con un entero N que no es mayor que 10^4 por su valor absoluto.
+             
+Metodología de la solución:
+    La siguiente línea de código es la encargada de sacar la suma de los números: print((n/2)*(n+1))
+    Básicamente divide el numero n introducido por el usuario entre 2 y lo multiplica por el mismo numero n sumándole 1. Al
+    aplicar esta operación con cualquier número n, realiza la suma correcta.
